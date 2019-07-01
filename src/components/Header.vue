@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="position:fixed;z-index:9999;top:0;">
         <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
     <div class="navbar-header">

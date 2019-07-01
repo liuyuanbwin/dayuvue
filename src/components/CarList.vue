@@ -1,25 +1,40 @@
 <template>
      <div>
          <div class="panel panel-primary" v-for="(car, index) in cars" :key="index">
-            <div class="panel-heading">
-                <h3 class="text-left panel-title">{{car.number}}</h3>
+            <div class="panel-heading"  >
+                <h1 class="text-left panel-title">{{car.number}}</h1>
             </div>
-             <div class="panel-body">
-                这是一个基本的面板
-            </div>
-            <table class="table">
-                <th>产品</th>
-                <th>价格
-                </th>
-                <tr>
-                    <td>产品 A</td>
-                    <td>200</td>
-                </tr>
-                <tr>
-                    <td>产品 B</td>
-                    <td>400</td>
-                </tr>
-            </table>
+             <table class="table" id="carinfo" >
+   <thead>
+      <tr>
+         <th class="text-center">项目</th>
+         <th class="text-center">名称</th>
+         <th class="text-center">详情</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>车型</td>
+         <td>{{car.brand}}</td>
+         <td>{{car.model}}</td>
+      </tr>
+      <tr>
+         <td>投保人</td>
+         <td>{{car.policyholder}}</td>
+         <td>{{car.policyholderTel}}</td>
+      </tr>
+      <tr>
+         <td>被保险人</td>
+         <td>{{car.insurant}}</td>
+         <td>{{car.insurantTel}}</td>
+      </tr>
+      <tr>
+         <td>联系人</td>
+         <td>{{car.linkman}}</td>
+         <td>{{car.linkmanTel}}</td>
+      </tr>
+   </tbody>
+</table>
            
         </div>
     </div>
@@ -46,5 +61,7 @@ export default {
 </script>
 
 <style>
-
+.fullwidth{
+    width: 100%
+}
 </style>
