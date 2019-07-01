@@ -1,10 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
+import VueResource from 'vue-resource'
+import Manage from '@/components/Manage';
 import HomePage from '@/components/HomePage';
 import Login from '@/components/Login';
 
-Vue.use(Router);
+Vue.use(Router)
+Vue.use(VueResource)
 
 export default new Router({
   routes: [
@@ -18,8 +20,8 @@ export default new Router({
     },
     {
       path: '/hello',
-      name: 'Hello',
-      component: HelloWorld,
+      name: 'Manage',
+      component: Manage,
       meta: {
         keepAlive: true,
       },
@@ -33,4 +35,5 @@ export default new Router({
       },
     },
   ],
+  mode: "history"
 });

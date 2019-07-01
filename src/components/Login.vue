@@ -19,7 +19,7 @@
                     <button type="button" class="btn btn-primary form-control" @click="login">登录</button>
                 </div>
                 <div class="form-group" style="margin-bottom:0px">
-                    <button type="button" class="btn btn-default form-control">注册</button>
+                    <button type="button" class="btn btn-default form-control" @click="regist">注册</button>
                 </div>
             </div>
         </div><!-- /.modal-content -->
@@ -32,6 +32,12 @@ export default {
   methods: {
     login: function () {
       console.log('登录了 ' + this.user + ' ' + '密码 ' + this.password)
+      this.$router.replace({path:'/hello'})
+    },
+    regist: function () {
+      this.$http.get("http://localhost:3000/bills").then((data) => {
+      console.log(data)
+    })
     }
   },
   data () {

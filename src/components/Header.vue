@@ -3,7 +3,7 @@
         <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
     <div class="navbar-header">
-        <a class="navbar-brand" href="#">菜鸟教程</a>
+        <a class="navbar-brand" href="#">大宇车险</a>
     </div>
     <div>
         <ul class="nav navbar-nav">
@@ -27,8 +27,8 @@ export default {
     data(){
         return{
             navList:[
-                {text:'首页',isActive:true,to:'/'},
-                {text:'详情',isActive:false,to:'/hello'},
+                {text:'保单中心',isActive:true,to:'/'},
+                {text:'资源管理',isActive:false,to:'/hello'},
                 {text:'我的',isActive:false,to:'/login'},
                 {text:'关于',isActive:false,to:'/'}
             ]
